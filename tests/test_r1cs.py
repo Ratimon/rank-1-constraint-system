@@ -1,7 +1,7 @@
 import numpy as np
 import random
 
-def test_simple_r1cs():
+def test_multiply4():
     # Transforming:  out = x * y * z * u
 
     # v1 = x * y
@@ -41,7 +41,7 @@ def test_simple_r1cs():
 
     assert result.all(), "system contains an inequality"
 
-def test_simple_r1cs_2():
+def test_simple_r1cs():
 
     # Transforming:  out = 5*x^3 - 4*y^2*x^2 + 13*x*y^2 + x^2 - 10*y
 
