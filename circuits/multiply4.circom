@@ -17,4 +17,4 @@ template Multiply4() {
     out <== v1 * v2;
 }
 
-template main = Multiply4();
+component main = Multiply4();
