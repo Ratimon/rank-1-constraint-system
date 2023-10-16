@@ -13,22 +13,22 @@ pnpm python:test
 Generate the R1CS, symbol file, and `multiply4_js/`:
 
 ```bash
-pnpm circuits:compile
+pnpm circuits:multiply4:compile
 ```
 
 Print the R1CS file:
 
 ```bash
-pnpm circuits:print
+pnpm circuits:multiply4:print
 ```
 
 Compute the witness. This will generate **witness.wtns** file:
 
 ```bash
-pnpm circuits:compute_witness
+pnpm circuits:multiply4:compute_witness
 ```
 
 Generate the witness in **JSON** format:
 ```bash
-pnpm circuits:generate_witness
+pnpm circuits:multiply4:generate_witness
 ```
