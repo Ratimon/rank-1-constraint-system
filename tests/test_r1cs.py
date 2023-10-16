@@ -5,7 +5,7 @@ def test_multiply4():
     # Transforming:  out = x * y * z * u
 
     # v1 = x * y
-    # v2 = z * z
+    # v2 = z * u
     # out = v1 * v2
 
     # Our witness vector is: [1 out x y z u v1 v2]

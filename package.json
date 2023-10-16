@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "circuits:print": "pnpm --filter ./circuits print"
+    "python:test": "poetry run pytest tests/test_r1cs.py",
+    "circuits:compile": "pnpm --filter ./circuits compile",
+    "circuits:print": "pnpm --filter ./circuits print",
+    "circuits:compute_witness": "pnpm --filter ./circuits compute_witness",
+    "circuits:generate_witness": "pnpm --filter ./circuits generate_witness"
   },
   "repository": {
     "type": "git",

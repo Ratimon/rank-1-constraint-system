@@ -4,7 +4,10 @@
   "description": "",
   "scripts": {
     "snarkjs": "snarkjs",
-    "print": "pnpm snarkjs r1cs print ./multiply4.r1cs"
+    "compile": "circom multiply4.circom --r1cs --wasm --sym",
+    "print": "pnpm snarkjs r1cs print ./multiply4.r1cs",
+    "compute_witness": "node ./multiply4_js/generate_witness.js ./multiply4_js/multiply4.wasm ./multiply4_js/input.json ./multiply4_js/witness.wtns",
+    "generate_witness": "pnpm snarkjs wtns export json ./multiply4_js/witness.wtns ./multiply4_js/witness.json"
   },
   "repository": {
     "type": "git",

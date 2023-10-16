@@ -4,19 +4,31 @@
 
 We assume that you already setup your working environment with [circom](https://docs.circom.io/getting-started/installation/#installing-circom) and [snarkjs](https://github.com/iden3/snarkjs).
 
-```bash
-poetry run pytest tests/test_r1cs.py
-```
+Run Python test:
 
 ```bash
-cd circuits
-circom multiply4.circom --r1cs --sym --wasm
+pnpm python:test
 ```
 
-This will generate the R1CS, symbol file, and `multiply4_js/`
+Generate the R1CS, symbol file, and `multiply4_js/`:
 
+```bash
+pnpm circuits:compile
+```
+
+Print the R1CS file:
 
 ```bash
 pnpm circuits:print
 ```
 
+Compute the witness. This will generate **witness.wtns** file:
+
+```bash
+pnpm circuits:compute_witness
+```
+
+Generate the witness in **JSON** format:
+```bash
+pnpm circuits:generate_witness
+```

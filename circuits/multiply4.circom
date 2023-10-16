@@ -9,7 +9,7 @@ template Multiply4() {
     signal v1;
     signal v2;
     
-    signal out;
+    signal output out;
     
     v1 <== x * y;
     v2 <== z * u;
