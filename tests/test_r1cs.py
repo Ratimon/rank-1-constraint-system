@@ -90,21 +90,23 @@ def test_polynomial():
     result = C.dot(w) == np.multiply(A.dot(w),B.dot(w))
     assert result.all(), "result contains an inequality"
 
+
+
+# fn main(x: field, y: field) -> field {
+#   assert!(y == 0 || y == 1 || y == 2);
+#   if (y == 0) {
+# 		return x; 
+# 	}
+# 	else if (y == 1) {
+# 	  return x**2;
+# 	} 
+# 	else {
+# 	  return x**3;
+# 	}
+# }
+
+
 def test_polynomial2():
-
-    # fn main(x: field, y: field) -> field {
-    #   assert!(y == 0 || y == 1 || y == 2);
-    #   if (y == 0) {
-    # 		return x; 
-    # 	}
-    # 	else if (y == 1) {
-    # 	  return x**2;
-    # 	} 
-    # 	else {
-    # 	  return x**3;
-    # 	}
-    # }
-
 
     # Transforming:
     # 0 = y(y-1)(y-2)
@@ -142,14 +144,6 @@ def test_polynomial2():
                   [0,0,0,0,0,1,0,0,0,0],
                   [0,0,0,1,0,0,0,0,0,0]])
     
-    # C = np.array([[0,0,0,0,1,0,0,0,0,0],
-    #               [0,0,0,0,0,1,0,0,0,0],
-    #               [0,0,0,0,0,0,1,0,0,0],
-    #               [0,0,0,0,0,0,0,1,0,0],
-    #               [0,0,0,0,0,0,0,0,1,0],
-    #               [0,0,0,0,0,0,0,0,0,1],
-    #               [0,2,-2,0,3,0,-1,-4,2,1]])
-    
     C = np.array([[0,0,0,0,1,0,0,0,0,0],
                   [0,0,0,0,0,1,0,0,0,0],
                   [0,0,0,0,0,0,1,0,0,0],
@@ -169,12 +163,9 @@ def test_polynomial2():
     v4 = v1*x
     v5 = v1*v1
     v6 = v1*v2
-    # out = x*x*x*y*y - x*x*x*y + (-2)*y*y*x*x + 4*x*x*y +  x*y*y + (-3)*x*y + 2*x
     out = 1/2 *x*x*x*y*y + (-1/2) *x*x*x*y + (-1)*y*y*x*x + 2*x*x*y +  1/2*x*y*y + (-3/2)*x*y + x
-
 
     w = np.array([1, out, x, y, v1, v2, v3, v4, v5, v6])
 
     result = C.dot(w) == np.multiply(A.dot(w),B.dot(w))
     assert result.all(), "result contains an inequality"
-
