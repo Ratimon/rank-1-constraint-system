@@ -41,7 +41,7 @@ def test_multiply4():
 
     assert result.all(), "system contains an inequality"
 
-def test_simple_r1cs():
+def test_polynomial():
 
     # Transforming:  out = 5*x^3 - 4*y^2*x^2 + 13*x*y^2 + x^2 - 10*y
 

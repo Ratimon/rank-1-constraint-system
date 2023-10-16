@@ -4,10 +4,14 @@
   "description": "",
   "scripts": {
     "python:test": "poetry run pytest tests/test_r1cs.py",
-    "circuits:compile": "pnpm --filter ./circuits compile",
-    "circuits:print": "pnpm --filter ./circuits print",
-    "circuits:compute_witness": "pnpm --filter ./circuits compute_witness",
-    "circuits:generate_witness": "pnpm --filter ./circuits generate_witness"
+    "circuits:multiply4:compile": "pnpm --filter ./circuits multiply4:compile",
+    "circuits:multiply4:print": "pnpm --filter ./circuits multiply4:print",
+    "circuits:multiply4:compute_witness": "pnpm --filter ./circuits multiply4:compute_witness",
+    "circuits:multiply4:generate_witness": "pnpm --filter ./circuits multiply4:generate_witness",
+    "circuits:polynomial:compile": "pnpm --filter ./circuits polynomial:compile",
+    "circuits:polynomial:print": "pnpm --filter ./circuits polynomial:print",
+    "circuits:polynomial:compute_witness": "pnpm --filter ./circuits polynomial:compute_witness",
+    "circuits:polynomial:generate_witness": "pnpm --filter ./circuits polynomial:generate_witness"
   },
   "repository": {
     "type": "git",
