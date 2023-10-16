@@ -14,3 +14,9 @@ circom multiply4.circom --r1cs --sym --wasm
 ```
 
 This will generate the R1CS, symbol file, and `multiply4_js/`
+
+
+```bash
+pnpm circuits:print
+```
+

@@ -1,9 +1,10 @@
 {
-  "name": "rank-1-constraint-system",
+  "name": "circuits",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "circuits:print": "pnpm --filter ./circuits print"
+    "snarkjs": "snarkjs",
+    "print": "pnpm snarkjs r1cs print ./multiply4.r1cs"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Ratimon/rank-1-constraint-system/issues"
   },
-  "homepage": "https://github.com/Ratimon/rank-1-constraint-system#readme"
+  "homepage": "https://github.com/Ratimon/rank-1-constraint-system#readme",
+  "devDependencies": {
+    "snarkjs": "^0.7.1"
+  }
 }
