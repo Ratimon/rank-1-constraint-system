@@ -1,0 +1,14 @@
+1,1,1,main.out
+2,2,1,main.x
+3,3,1,main.y
+4,4,1,main.v1
+5,5,1,main.v2
+6,6,1,main.v3
+7,7,1,main.v4
+8,8,1,main.v5
+9,9,1,main.v6
+10,10,1,main.v7
+11,-1,1,main.c
+12,-1,0,main.isZero.out
+13,-1,0,main.isZero.in
+14,11,0,main.isZero.inv

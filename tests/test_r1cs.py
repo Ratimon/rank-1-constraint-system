@@ -43,16 +43,15 @@ def test_multiply4():
 
 def test_polynomial():
 
-    # Transforming:  out = 5*x^3 - 4*y^2*x^2 + 13*x*y^2 + x^2 - 10*y
-
-    # v1 = x^2
-    # v2 = y^2
+    # Transforming:
+    # out = 5*x^3 - 4*y^2*x^2 + 13*x*y^2 + x^2 - 10*y
     # out = 5*v1*x - 4*v2*v1 + 13*x*v2 + v1 - 10*y
 
     # v1 = x*x
     # v2 = y*y
     # v3 = v1*v2
     # v4 = x*v2
+    
     # 4*v3 - 13*v4 - v1 + 10*y + out = 5*v1*x
 
     # Our witness vector is: [1 out x y v1 v2 v3 v4]
@@ -113,6 +112,7 @@ def test_polynomial2():
     # 0 = y^3 - 3*y^2 + 2y
     # 0 = y*v2 - 3*v2 + 2*y
 
+    # Transforming:
     # out =  1/2 * x*(1-y)(2-y) + x^2*(y)*(2-y) +  (-1/2)* x^3*(y)*(1-y)
     # out =  1/2 *(x^3)(y^2) + (-1/2) *(x^3)(y) + (-1)*y^2*x^2 + 2*x^2*y +  1/2(x)(y^2) + (-3/2)(x)(y) + x
     # out =  1/2 *(v7)(y) + (-1/2) *(v7) + (-1)*(v6) + 2*(v5) +  1/2(v4) + (-3/2)(v1) + x
@@ -169,8 +169,8 @@ def test_polynomial2():
     
     # pick random values for x 
     x = random.randint(1,1000)
-    # pick random values for y (must be between 1 and 3) 
-    y = random.randint(1,3)
+    # pick random values for y (must be between 1 and 2) 
+    y = random.randint(1,2)
 
     v1 = x*y
     v2 = y*y

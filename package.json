@@ -11,7 +11,11 @@
     "circuits:polynomial:compile": "pnpm --filter ./circuits polynomial:compile",
     "circuits:polynomial:print": "pnpm --filter ./circuits polynomial:print",
     "circuits:polynomial:compute_witness": "pnpm --filter ./circuits polynomial:compute_witness",
-    "circuits:polynomial:generate_witness": "pnpm --filter ./circuits polynomial:generate_witness"
+    "circuits:polynomial:generate_witness": "pnpm --filter ./circuits polynomial:generate_witness",
+    "circuits:polynomial2:compile": "pnpm --filter ./circuits polynomial2:compile",
+    "circuits:polynomial2:print": "pnpm --filter ./circuits polynomial2:print",
+    "circuits:polynomial2:compute_witness": "pnpm --filter ./circuits polynomial2:compute_witness",
+    "circuits:polynomial2:generate_witness": "pnpm --filter ./circuits polynomial2:generate_witness"
   },
   "repository": {
     "type": "git",

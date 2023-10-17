@@ -11,7 +11,11 @@
     "polynomial:compile": "circom polynomial.circom --r1cs --wasm --sym",
     "polynomial:print": "pnpm snarkjs r1cs print ./polynomial.r1cs",
     "polynomial:compute_witness": "node ./polynomial_js/generate_witness.js ./polynomial_js/polynomial.wasm ./polynomial_js/input.json ./polynomial_js/witness.wtns",
-    "polynomial:generate_witness": "pnpm snarkjs wtns export json ./polynomial_js/witness.wtns ./polynomial_js/witness.json"
+    "polynomial:generate_witness": "pnpm snarkjs wtns export json ./polynomial_js/witness.wtns ./polynomial_js/witness.json",
+    "polynomial2:compile": "circom polynomial2.circom --r1cs --wasm --sym",
+    "polynomial2:print": "pnpm snarkjs r1cs print ./polynomial2.r1cs",
+    "polynomial2:compute_witness": "node ./polynomial2_js/generate_witness.js ./polynomial2_js/polynomial2.wasm ./polynomial2_js/input.json ./polynomial2_js/witness.wtns",
+    "polynomial2:generate_witness": "pnpm snarkjs wtns export json ./polynomial2_js/witness.wtns ./polynomial2_js/witness.json"
   },
   "repository": {
     "type": "git",
