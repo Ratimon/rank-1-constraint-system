@@ -90,7 +90,6 @@ def test_polynomial():
     assert result.all(), "result contains an inequality"
 
 
-
 # fn main(x: field, y: field) -> field {
 #   assert!(y == 0 || y == 1 || y == 2);
 #   if (y == 0) {
@@ -103,7 +102,6 @@ def test_polynomial():
 # 	  return x**3;
 # 	}
 # }
-
 
 def test_polynomial2():
 
