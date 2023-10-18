@@ -1,6 +1,6 @@
 pragma circom 2.0.8;
 
-include "node_modules/circomlib/circuits/comparators.circom";
+include "../node_modules/circomlib/circuits/comparators.circom";
 
 template Polynomial2() {
     signal input x;
