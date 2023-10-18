@@ -17,13 +17,16 @@ describe("multiply4 Test ", function (){
         await circuit.loadConstraints();
         let witness;
 
-        const expectedOutput = 210;
+        const x = 2;
+        const y = 3;
+        const z = 5;
+        const u = 7;
 
-        witness = await circuit.calculateWitness({"x":2,"y":3,"z":5,"u":7 }, true);
+        witness = await circuit.calculateWitness({"x":x,"y":y,"z":z,"u":u }, true);
         console.log("witness -> ", witness);
 
         assert(Fr.eq(Fr.e(witness[0]), Fr.e(1)));
-        assert(Fr.eq(Fr.e(witness[1]), Fr.e(expectedOutput)));
+        assert(Fr.eq(Fr.e(witness[1]), Fr.e(x * y * z * u)));
     
     })
 })
