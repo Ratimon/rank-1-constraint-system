@@ -61,6 +61,7 @@ template Polynomial2() {
 
     // We check that c is not zero.
     // In other words, we check that y = 0 , y = 1, y = 2 
+    // we use component so 
     component isZero = IsZero();
 
     isZero.in <== c;

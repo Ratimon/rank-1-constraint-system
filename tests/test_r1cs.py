@@ -41,6 +41,9 @@ def test_multiply4():
 
     assert result.all(), "system contains an inequality"
 
+    result2 = C.dot(w) - np.multiply(A.dot(w), B.dot(w)) == 0
+    assert result2.all(), "system contains an inequality"
+
 def test_polynomial():
 
     # Transforming:
@@ -88,6 +91,9 @@ def test_polynomial():
 
     result = C.dot(w) == np.multiply(A.dot(w),B.dot(w))
     assert result.all(), "result contains an inequality"
+
+    result2 = C.dot(w) - np.multiply(A.dot(w), B.dot(w)) == 0
+    assert result2.all(), "system contains an inequality"
 
 
 # fn main(x: field, y: field) -> field {
@@ -183,3 +189,6 @@ def test_polynomial2():
 
     result = C.dot(w) == np.multiply(A.dot(w),B.dot(w))
     assert result.all(), "result contains an inequality"
+
+    result2 = C.dot(w) - np.multiply(A.dot(w), B.dot(w)) == 0
+    assert result2.all(), "system contains an inequality"
