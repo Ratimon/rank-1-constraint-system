@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/Ratimon/rank-1-constraint-system#readme",
   "devDependencies": {
+    "circomlib": "^2.0.5",
     "snarkjs": "^0.7.1"
   }
 }
