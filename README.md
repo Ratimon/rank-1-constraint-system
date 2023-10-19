@@ -10,6 +10,12 @@ Run Python test:
 pnpm python:test
 ```
 
+Run test for circuits:
+
+```bash
+pnpm circuits:test
+```
+
 Generate the R1CS, symbol file, and `multiply4_js/`:
 
 ```bash

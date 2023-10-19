@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "python:test": "poetry run pytest tests/test_r1cs.py",
+    "circuits:test": "pnpm --filter ./circuits test",
     "circuits:multiply4:compile": "pnpm --filter ./circuits multiply4:compile",
     "circuits:multiply4:print": "pnpm --filter ./circuits multiply4:print",
     "circuits:multiply4:compute_witness": "pnpm --filter ./circuits multiply4:compute_witness",
